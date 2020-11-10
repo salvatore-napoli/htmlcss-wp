@@ -5,6 +5,10 @@
 }
 
 /* Utility Class */
+.white-text {
+  color: white;
+}
+
 .floated {
   float: left;
 }
@@ -15,8 +19,8 @@ body {
 }
 
 div.container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 1416px;
+  margin: 30px auto;
 }
 
 header {
@@ -32,7 +36,6 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   text-align: center;
   width: 100%;
 }
@@ -40,6 +43,25 @@ header {
 #logo-img {
   height: 250px;
   width: 550px;
+}
+
+nav {
+  height: 70px;
+  background-color: #666666;
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+nav ul li:nth-child(-n+6) {
+  padding-right: 20px;
 }
 
 main {
@@ -55,39 +77,40 @@ main::after {
 }
 
 main > section.side-sx {
-  width: 25%;
   height: 70%;
+}
+
+main > section.side-sx, main > section.side-dx {
+  width: 25%;
+}
+
+main > section.side-sx, main > section.side-dx div.right-content div.content {
+  background-color: #D391E3;
 }
 
 main > section.main-content {
   width: 50%;
-  height: 100%;
   padding: 0 20px;
 }
 
-main section.main-content div.content {
+main > section.main-content, main > section.main-content div.content, main section.side-dx div.right-content div.content {
+  height: 100%;
+}
+
+main > section.main-content div.content {
   background-color: #800080;
 }
 
 main > section.side-dx {
-  width: 25%;
   height: 95%;
-}
-
-main > section.side-sx, main section.side-dx div.right-content div.content {
-  background-color: #D391E3;
 }
 
 main > section.side-dx div.right-content {
   height: 50%;
 }
 
-main section.side-dx div.right-content:nth-child(-n+2) {
+main > section.side-dx div.right-content:nth-child(-n+2) {
   padding-bottom: 15px;
-}
-
-main section.main-content div.content, main section.side-dx div.right-content div.content {
-  height: 100%;
 }
 
 footer {
