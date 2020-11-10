@@ -56,11 +56,11 @@ main > .side-sx, main .side-dx .right-content .content {
   background-color: #D391E3;
 }
 
-main .side-dx .right-content:first-child, main .side-dx .right-content:nth-child(2) {
+main .side-dx .right-content {
   height: 50%;
 }
 
-main .side-dx .right-content:first-child {
+main .side-dx .right-content:nth-child(-n+2) {
   padding-bottom: 15px;
 }
 
