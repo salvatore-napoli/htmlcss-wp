@@ -49,6 +49,7 @@ body {
 div.container {
   width: 1200px;
   margin: 30px auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -107,15 +108,15 @@ main > section.side-sx div.content {
   padding: 5px 8px;
 }
 
-main section.side-sx img.icon {
+main > section.side-sx img.icon {
   vertical-align: top;
 }
 
-main section.side-sx h2 {
+main > section.side-sx h2 {
   padding: 0 0 10px 7px;
 }
 
-main section.side-sx a {
+main > section.side-sx a {
   color: green;
   text-decoration: none;
   display: block;
@@ -126,6 +127,10 @@ main section.side-sx a {
 main > section.main-content {
   width: 62%;
   padding: 0 5%;
+}
+
+main > section.main-content .content h2 {
+  text-shadow: 3px 3px 0px lightgrey;
 }
 
 main > section.main-content div.content, main > section.side-dx .right-content div.content {
