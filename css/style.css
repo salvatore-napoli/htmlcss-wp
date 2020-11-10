@@ -10,14 +10,36 @@
 }
 /* end Utility Class */
 
-.container {
+body {
+  background-image: url("../img/background.png");
+}
+
+div.container {
   width: 1200px;
   margin: 0 auto;
 }
 
 header {
-  background-color: #FFFF00;
-  height: 150px;
+  background-image: url("../img/logo-bg.png");
+  background-size: cover;
+  height: 453px;
+  border: 10px solid white;
+  position: relative;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+#logo-img {
+  height: 250px;
+  width: 550px;
 }
 
 main {
@@ -32,39 +54,39 @@ main::after {
   clear: both;
 }
 
-main > .side-sx {
+main > section.side-sx {
   width: 25%;
   height: 70%;
 }
 
-main > .main-content {
+main > section.main-content {
   width: 50%;
   height: 100%;
   padding: 0 20px;
 }
 
-main .main-content .content {
+main section.main-content div.content {
   background-color: #800080;
 }
 
-main > .side-dx {
+main > section.side-dx {
   width: 25%;
   height: 95%;
 }
 
-main > .side-sx, main .side-dx .right-content .content {
+main > section.side-sx, main section.side-dx div.right-content div.content {
   background-color: #D391E3;
 }
 
-main .side-dx .right-content {
+main > section.side-dx div.right-content {
   height: 50%;
 }
 
-main .side-dx .right-content:nth-child(-n+2) {
+main section.side-dx div.right-content:nth-child(-n+2) {
   padding-bottom: 15px;
 }
 
-main .main-content .content, main .side-dx .right-content .content {
+main section.main-content div.content, main section.side-dx div.right-content div.content {
   height: 100%;
 }
 
