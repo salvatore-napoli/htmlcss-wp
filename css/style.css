@@ -142,5 +142,37 @@ main > section.side-sx, main > section.main-content div.content, main > section.
 }
 
 footer {
+  height: 175px;
+  color: lightgrey;
+}
+
+#footer-container {
+  padding: 0 5px;
+}
+
+#author {
+  padding: 5px 100px 0;
+  border-bottom: 1px solid lightgrey;
+  border-width: medium;
+  font-style: italic;
+}
+
+#facebook-logo {
+  background-image: url("../img/facebook-logo.jpg");
+  width: 400px;
+}
+
+#instagram-logo {
+  background-image: url("../img/instagram-logo.jpg");
+  width: 380px;
+}
+
+#github-logo {
+  background-image: url("../img/github-logo.jpg");
+  width: 300px;
+}
+
+#facebook-logo, #instagram-logo, #github-logo {
+  background-size: cover;
   height: 100px;
 }
