@@ -5,12 +5,35 @@
 }
 
 /* Utility Class */
+.floated {
+  float: left;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .white-text {
   color: white;
 }
 
-.floated {
-  float: left;
+.bold {
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+}
+
+.content-text {
+  font-size: 20px;
+}
+
+h2 {
+  color: #0E0E0E;
+  font-size: 30px;
 }
 /* end Utility Class */
 
@@ -36,7 +59,6 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   width: 100%;
 }
 
@@ -57,7 +79,6 @@ nav ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: bold;
 }
 
 nav ul li:nth-child(-n+6) {
@@ -67,38 +88,40 @@ nav ul li:nth-child(-n+6) {
 main {
   width: 100%;
   height: 500px;
-  padding: 10px 0;
-}
-
-main::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-main > section.side-sx {
-  height: 70%;
+  padding: 15px 0 40px;
 }
 
 main > section.side-sx, main > section.side-dx {
-  width: 25%;
+  width: 16%;
 }
 
-main > section.side-sx, main > section.side-dx div.right-content div.content {
-  background-color: #D391E3;
+main > section.side-sx div.content {
+  padding: 5px 8px;
+}
+
+main section.side-sx img.icon {
+  vertical-align: top;
+}
+
+main section.side-sx h2 {
+  padding: 0 0 10px 7px;
+}
+
+main section.side-sx a {
+  color: green;
+  text-decoration: none;
+  display: block;
+  clear: both;
+  padding: 0 0 10px;
 }
 
 main > section.main-content {
-  width: 50%;
-  padding: 0 20px;
+  width: 68%;
+  padding: 0 5%;
 }
 
 main > section.main-content, main > section.main-content div.content, main section.side-dx div.right-content div.content {
   height: 100%;
-}
-
-main > section.main-content div.content {
-  background-color: #800080;
 }
 
 main > section.side-dx {
@@ -113,7 +136,11 @@ main > section.side-dx div.right-content:nth-child(-n+2) {
   padding-bottom: 15px;
 }
 
+main > section.side-sx, main > section.main-content div.content, main > section.side-dx div.right-content div.content, footer {
+  background-color: rgb(255,255,255);
+  border-radius: 5px;
+}
+
 footer {
-  background-color: #ADD8E6;
   height: 100px;
 }
